@@ -1,6 +1,8 @@
-[gd_scene load_steps=8 format=3]
+[gd_scene load_steps=9 format=3]
 
 [ext_resource type="PackedScene" path="res://player.tscn" id="1_player"]
+[ext_resource type="PackedScene" path="res://key.tscn" id="2_key"]
+
 [sub_resource type="BoxMesh" id="FloorMesh"]
 size = Vector3(16, 0.2, 12)
 
@@ -66,5 +68,8 @@ position = Vector3(0, 0.75, -2)
 position = Vector3(0, 2.2, 7)
 rotation_degrees = Vector3(-10, 180, 0)
 current = true
+
 [node name="Player" parent="." instance=ExtResource("1_player")]
-position = Vector3(0, 0, 3)
+
+[node name="Key" parent="." instance=ExtResource("2_key")]
+position = Vector3(3, 0.7, -2)
